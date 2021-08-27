@@ -71,6 +71,6 @@ At this point in time we have no undergoing research projects – please stay tu
 
 #### How can I undertake research involving MomsOverMatter? 
 
-Please email Mateusz Faltyn at info@llettonna.com for research inquiries. 
+Please email info@llettonna.com for research inquiries. 
 
 </details>
