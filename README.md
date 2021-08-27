@@ -1,11 +1,14 @@
 # MomsOverMatter
 
+Made by lleTTonna, MomsOverMatter is a free and onfidential mobile app that delivers information about postpartum mental health based on user-generated responses to validated psychiatric questionnaires.
+
 ## MomsOverMatter FAQ
 
 <details open>
 
 ### What is MomsOverMatter?
-Made by lleTTonna, MomsOverMatter is a free, confidential, web application that delivers information about postpartum mental health based on user-generated responses to validated psychiatric questionnaires.
+
+Made by lleTTonna, MomsOverMatter is a free and onfidential mobile app that delivers information about postpartum mental health based on user-generated responses to validated psychiatric questionnaires.
 
 ### How is MomsOverMatter structured?
 
