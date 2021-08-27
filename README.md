@@ -2,6 +2,8 @@
 
 ## MomsOverMatter FAQ
 
+<details open>
+
 ### What is MomsOverMatter?
 Made by lleTTonna, MomsOverMatter is a free, confidential, web application that delivers information about postpartum mental health based on user-generated responses to validated psychiatric questionnaires.
 
@@ -71,3 +73,4 @@ At this point in time we have no undergoing research projects – please stay tu
 
 Please email Mateusz Faltyn at info@llettonna.com for research inquiries. 
 
+</details>
