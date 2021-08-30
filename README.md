@@ -1,6 +1,42 @@
 # MomsOverMatter
 
+<img src="https://github.com/faltynmateusz/MomsOverMatter/blob/main/Logo.png" width="150" height="150" />
+
 MomsOverMatter is a free and onfidential mobile app that delivers information about postpartum mental health based on user-generated responses to validated psychiatric questionnaires.
+
+See the [MomsOverMatter website](https://momsovermatter.ca/).
+
+See the [lleTTonna website](https://llettonna.com/).
+
+## Installation
+
+
+## Usage
+
+
+## Contributing
+
+For minor changes or suggestions, please open an issue first to discuss what you would like to change. 
+
+For larger changes or suggestions, please email info@llettonna.com. 
+
+## Technologies
+
+
+### Languages
+JavaScript, HTML, CSS
+
+### Frameworks and Libraries
+N/A
+
+### Stacks 
+N/A
+
+## Known Bugs
+None
+
+## Copyright
+[GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## MomsOverMatter FAQ
 
