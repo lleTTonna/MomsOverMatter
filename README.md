@@ -1,5 +1,7 @@
 # MomsOverMatter
 
+![Logo](link to image on GH)]
+
 MomsOverMatter is a free and onfidential mobile app that delivers information about postpartum mental health based on user-generated responses to validated psychiatric questionnaires.
 
 See the [MomsOverMatter website](https://momsovermatter.ca/).
