@@ -24,7 +24,7 @@ For larger changes or suggestions, please email info@llettonna.com.
 
 
 ### Languages
-JavaScript, HTML, CSS
+HTML, CSS, JavaScript
 
 ### Frameworks and Libraries
 React Native
