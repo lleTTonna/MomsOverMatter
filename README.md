@@ -27,7 +27,7 @@ For larger changes or suggestions, please email info@llettonna.com.
 JavaScript, HTML, CSS
 
 ### Frameworks and Libraries
-N/A
+Frontend: React Native
 
 ### Stacks 
 N/A
