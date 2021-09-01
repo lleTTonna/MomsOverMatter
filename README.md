@@ -27,10 +27,10 @@ For larger changes or suggestions, please email info@llettonna.com.
 JavaScript, HTML, CSS
 
 ### Frameworks and Libraries
-Frontend: React Native
+React Native
 
-### Stacks 
-N/A
+### Backend 
+Firebase 
 
 ## Known Bugs
 None
