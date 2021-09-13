@@ -14,7 +14,11 @@ const WelcomeScreen = props => {
   const { navigation } = props;
 
   return (
-    <ScreenContainer scrollable={false} hasSafeArea={false}>
+    <ScreenContainer
+      style={{ backgroundColor: theme.colors.background }}
+      scrollable={false}
+      hasSafeArea={false}
+    >
       <View style={styles.ViewTF}>
         <Image
           style={styles.ImageSF}
@@ -25,13 +29,7 @@ const WelcomeScreen = props => {
           {'MomsOverMatter'}
         </Text>
 
-        <Text
-          style={[
-            theme.typography.subtitle1,
-            styles.TextFb,
-            { color: theme.colors.strong },
-          ]}
-        >
+        <Text style={[styles.TextFb, { color: theme.colors.strong }]}>
           {'You deserve to be a happy mother.'}
         </Text>
       </View>
@@ -45,7 +43,7 @@ const WelcomeScreen = props => {
           <Button
             onPress={() => {
               try {
-                navigation.navigate(undefined);
+                navigation.navigate('SurveyScreen');
               } catch (err) {
                 console.error(err);
               }
@@ -114,10 +112,11 @@ const styles = StyleSheet.create({
   },
   TextRL: {
     fontFamily: 'PoppinsBold',
-    fontSize: 40,
+    fontSize: 36,
   },
   TextFb: {
     marginTop: 4,
+    fontFamily: 'PoppinsMedium',
   },
   ViewTF: {
     alignItems: 'center',
@@ -169,6 +168,7 @@ const styles = StyleSheet.create({
   Viewva: {
     alignItems: 'center',
     marginBottom: 100,
+    marginTop: 15,
   },
 });
 

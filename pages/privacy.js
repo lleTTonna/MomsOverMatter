@@ -1,5 +1,11 @@
 import React from 'react';
-import { Divider, ScreenContainer, Touchable, withTheme } from '@draftbit/ui';
+import {
+  Divider,
+  Icon,
+  ScreenContainer,
+  Touchable,
+  withTheme,
+} from '@draftbit/ui';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const PrivacyScreen = props => {
@@ -7,20 +13,23 @@ const PrivacyScreen = props => {
   const { navigation } = props;
 
   return (
-    <ScreenContainer>
+    <ScreenContainer style={{ backgroundColor: theme.colors.background }}>
       <View style={styles.View_3q} pointerEvents="auto">
         <Touchable
           onPress={() => {
             try {
-              navigation.navigate('WelcomeScreen');
+              navigation.goBack();
             } catch (err) {
               console.error(err);
             }
           }}
         >
-          <Text style={[styles.Textwa, { color: theme.colors.primary }]}>
-            {'Back'}
-          </Text>
+          <Icon
+            style={styles.IconT2}
+            color={theme.colors.primary}
+            name="AntDesign/left"
+            size={24}
+          />
         </Touchable>
       </View>
 
@@ -47,21 +56,21 @@ const PrivacyScreen = props => {
 };
 
 const styles = StyleSheet.create({
-  Textwa: {
-    fontFamily: 'PoppinsRegular',
-    textAlign: 'left',
-    marginLeft: 10,
-    marginTop: 10,
-    fontSize: 18,
+  IconT2: {
+    width: 24,
+    height: 24,
   },
   View_3q: {
     minHeight: 50,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingLeft: 16,
+    paddingRight: 16,
   },
   TextaN: {
     fontSize: 32,
     fontFamily: 'PoppinsBold',
     textAlign: 'center',
-    marginTop: 25,
   },
   DividerWK: {
     height: 1,
@@ -72,12 +81,14 @@ const styles = StyleSheet.create({
   },
   Viewxg: {
     minHeight: 50,
+    marginTop: 25,
   },
   Textxa: {
     marginLeft: 10,
     marginRight: 10,
     marginTop: 10,
     marginBottom: 10,
+    fontFamily: 'PoppinsRegular',
   },
 });
 
