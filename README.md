@@ -8,6 +8,9 @@ See the [MomsOverMatter website](https://momsovermatter.ca/).
 
 See the [lleTTonna website](https://llettonna.com/).
 
+## Repository Status
+Active
+
 ## Installation
 
 
@@ -24,13 +27,13 @@ For larger changes or suggestions, please email info@llettonna.com.
 
 
 ### Languages
-JavaScript, HTML, CSS
+HTML, CSS, JavaScript
 
 ### Frameworks and Libraries
-N/A
+React Native
 
-### Stacks 
-N/A
+### Backend 
+Firebase 
 
 ## Known Bugs
 None
