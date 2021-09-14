@@ -43,7 +43,7 @@ const WelcomeScreen = props => {
           <Button
             onPress={() => {
               try {
-                navigation.navigate('SurveyScreen');
+                navigation.navigate('IntroScreen');
               } catch (err) {
                 console.error(err);
               }
@@ -53,7 +53,7 @@ const WelcomeScreen = props => {
             labelColor={theme.colors.background}
             type="solid"
           >
-            {'Start Your Journey'}
+            {'Begin Your Journey'}
           </Button>
 
           <Text style={[styles.Textff, { color: theme.colors.medium }]}>
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   },
   Text_5X: {
     fontFamily: 'PoppinsBold',
-    fontSize: 12,
+    fontSize: 14,
   },
   Touchablec2: {
     alignItems: 'center',
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   TextaH: {
     fontFamily: 'PoppinsBold',
-    fontSize: 12,
+    fontSize: 14,
     marginBottom: 0,
   },
   Touchablefr: {

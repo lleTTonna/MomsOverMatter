@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     paddingRight: 16,
   },
   TextHQ: {
-    fontSize: 32,
+    fontSize: 26,
     fontFamily: 'PoppinsBold',
     textAlign: 'center',
   },

@@ -1,4 +1,5 @@
 import React from 'react';
+import Images from '../config/Images';
 import {
   Button,
   Icon,
@@ -6,9 +7,9 @@ import {
   Touchable,
   withTheme,
 } from '@draftbit/ui';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
-const SurveyScreen = props => {
+const IntroScreen = props => {
   const { theme } = props;
   const { navigation } = props;
 
@@ -35,9 +36,7 @@ const SurveyScreen = props => {
 
       <View style={styles.Viewba} pointerEvents="auto">
         <Text style={[styles.TextY2, { color: theme.colors.strong }]}>
-          {
-            'Take our 2-minute questionnaire to learn more about your feelings after baby.'
-          }
+          {'Click below to learn more about your feelings after baby.'}
         </Text>
       </View>
 
@@ -48,12 +47,12 @@ const SurveyScreen = props => {
           }
         </Text>
       </View>
-
+      <Image style={styles.ImageED} source={Images.Crib} resizeMode="cover" />
       <View style={styles.ViewIb} pointerEvents="auto">
         <Button
           onPress={() => {
             try {
-              navigation.navigate('EPDSScreen');
+              navigation.navigate('LowMoodScreen');
             } catch (err) {
               console.error(err);
             }
@@ -112,10 +111,17 @@ const styles = StyleSheet.create({
     marginLeft: 15,
     marginRight: 15,
     textAlign: 'left',
-    fontSize: 16,
+    fontSize: 14,
   },
   ViewO1: {
     minHeight: 50,
+  },
+  ImageED: {
+    width: 160,
+    height: 100,
+    top: 50,
+    marginBottom: 50,
+    left: 100,
   },
   ButtonHX: {
     paddingLeft: 28,
@@ -126,7 +132,7 @@ const styles = StyleSheet.create({
   },
   ViewIb: {
     minHeight: 50,
-    marginTop: 100,
+    marginTop: 50,
     paddingLeft: 34,
     paddingRight: 34,
   },
@@ -146,4 +152,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(SurveyScreen);
+export default withTheme(IntroScreen);
