@@ -1,114 +1,176 @@
-# MomsOverMatter
+# Welcome to your Draftbit app!
 
-<img src="https://github.com/faltynmateusz/MomsOverMatter/blob/main/Logo.png" width="150" height="150" />
+This `README` is designed to help you get your Draftbit app running locally. Read
+through the next few sections carefully, and if you encounter any issues please
+do not hesitate to post in [Community](https://community.draftbit.com).
 
-MomsOverMatter is a free and onfidential mobile app that delivers information about postpartum mental health based on user-generated responses to validated psychiatric questionnaires.
+> Note that all of the commands in this document should be run using your
+> computer's **command line**. If you're unsure of what this is, please read
+> [this](https://tutorial.djangogirls.org/en/intro_to_command_line/) guide
+> before moving on.
 
-See the [MomsOverMatter website](https://momsovermatter.ca/).
+Remember, at any point you can go back to [build.draftbit.com](https://build.draftbit.com) and continue building your app
+there!
 
-See the [lleTTonna website](https://llettonna.com/).
+## Requirements
+- [Node.js LTS release](https://nodejs.org/en/). As of 07/21 this is 14.17+
+- [Expo CLI](https://docs.expo.io/get-started/installation)
+- [Git](https://git-scm.com/)
+- [Watchman](https://facebook.github.io/watchman/docs/install#buildinstall) for macOS users
+- [Yarn](https://classic.yarnpkg.com/en/docs/install) use this over `npm install` when installing dependencies
 
-## Repository Status
-Active
+> Only Node.js LTS releases (even-numbered) are recommended. As Node.js [officially states](https://nodejs.org/en/about/releases/), "Production applications should only use Active LTS or Maintenance LTS releases."
 
-## Installation
+## Recommended Tools
 
-
-## Usage
-
-
-## Contributing
-
-For minor changes or suggestions, please open an issue first to discuss what you would like to change. 
-
-For larger changes or suggestions, please email info@llettonna.com. 
-
-## Technologies
+- [VSCode Editor](https://code.visualstudio.com/download)
+  - [VSCode Expo Extension](https://marketplace.visualstudio.com/items?itemName=byCedric.vscode-expo) for `app.json` debugging and autocomplete.
+- Windows users: [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows), Bash via WSL, or the VSCode terminal.
+- Expo Go for iOS and Android
+  - 🤖  [Android Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) - Android Lollipop (5) and greater.
+  - 🍎  [iOS App Store](https://itunes.com/apps/exponent) - iOS 11 and greater.
 
 
-### Languages
-HTML, CSS, JavaScript
+## Installing Node.js
 
-### Frameworks and Libraries
-React Native
+You can install Node by going to the [website directly](https://nodejs.org/en/) and clicking the side that says "Recommended For Most Users". This will guide you through the process. 
 
-### Backend 
-Firebase 
+Once Node has been installed, run the following on the command line to make sure
+it's been installed correctly:
 
-## Known Bugs
-None
+```
+$ node -v
+```
 
-## Copyright
-[GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+If you see the current version of Node in response, you've successfully
+installed Node on your machine.
 
-## MomsOverMatter FAQ
+For example,
 
-<details open>
+```
+$ node -v
+v14.17.3
+```
 
-### How is MomsOverMatter structured?
+[Learn more about installing Nodejs](https://nodejs.dev/learn/how-to-install-nodejs)
 
-MomsOverMatter is structured in the following manner:
+> 😳 **Need help?** Try searching the [Community](https://community.draftbit.com) &mdash; which are a great resource for troubleshooting.
 
-#### Choose Survey
+## Installing Expo CLI
 
-MomsOverMatter contains a variety of scientifically validated surveys which contain several screening questions that can indicate whether an individual has symptoms that are common in people with specific mental health problems. These surveys are not intended to provide a diagnosis. 
+You can install the Expo CLI using the following command. *This is the one spot where npm install is required!*
 
-#### Complete Survey
+```
+$ npm install -g expo-cli
+```
 
-Once you have chosen a specific survey that you would like to complete which corresponds to a specific mental health domain, please follow the instructions to complete the entire survey. 
+Verify that the installation was successful by running `expo whoami`. You're not logged in yet, so you will see "Not logged in". You can create an account by running `expo register` if you like, or if you have one already run `expo login`, but you also don't need an account to get started.
 
-#### Receive Information 
+[Learn more about Expo CLI here](https://docs.expo.io/get-started/installation/#installing-expo-cli)
 
-Once you have completed a specific survey, you will receive a result based on your answers on said survey, as well as information regarding postpartum mental health as well as several treatment options that are available to moms. This survey result is not intended to provide a diagnosis – only trained health professionals should do this. 
 
-### Who is MomsOverMatter intended for? 
+## Install Project Dependencies
 
-MomsOverMatter is intended for moms in the postpartum period (0 to 12 months post-birth) who are interested in learning more about their mental health during this stage in their life.  
+First, navigate to the project directory. The .zip will likely be in your
+downloads folder, so extract the .zip and move it to the desired location
+before proceeding.
 
-### What surveys are currently included in MomsOverMatter?
+Now, run the following commands to install the project dependencies (note that
+you'll need an internet connection to do so).
 
-As of January 29, 2021, below are the surveys (psychiatric questionnaires) included in MomsOverMatter:
+```
+$ cd Desktop/New-App
+$ yarn
+```
 
-#### Edinburgh Postnatal Depression Scale (EPDS) – Postpartum Depression 
+> The `cd` command above takes you into the project directory so you can install
+> the correct dependencies. You should replace `Desktop/New-App` with the actual
+> path to your unzipped project folder.
 
-Cox, J.L., Holden, J.M. and Sagovsky, R. (1987). Detection of postnatal depression: Development of the 10-item Edinburgh Postnatal Depression Scale. British Journal of Psychiatry, 150, 782-786.
+## Running
 
-#### General Anxiety Disorder-7 (GAD-7) – Postpartum Anxiety 
+To start your project, simply run: `yarn start` inside of the project directory
+(make sure you've [installed the dependencies
+locally](#install-local-dependencies) first). This should open the Expo
+developer tools in a browser tab.
 
-Spitzer RL, Kroenke K, Williams JB, Löwe B. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med. 2006;166(10):1092-1097. doi:10.1001/archinte.166.10.1092
+### Running in an emulator
 
-### For Moms
+You can run your app on your mobile device, on the iOS simulator (if you have
+a Mac), or on the Android emulator. If you'd prefer to run your app on an
+emulator, see the installation instructions below.
 
-#### What if I need help now?
+- [iOS Simulator](https://docs.expo.io/workflow/ios-simulator/)
+- [Android Studio](https://docs.expo.io/workflow/android-studio-emulator/)
 
-If you or someone else is in immediate danger and/or needs urgent medical help, call Emergency 911.
 
-The Canadian Association for Suicide Prevention has a directory of local crisis centres in different provinces which are available 24/7 to talk to you.
+### Running on your Android or iOS Device
 
-If you are concerned that you or someone else is unsafe, you can also go to the emergency department of your local hospital or ring the hospital and ask for the number of your local crisis assessment team.
+The fastest way to get up and running is to use the Expo Go app on your iOS or Android device. Expo Go allows you to open up apps that are being served through Expo CLI.
 
-Please note that MomsOverMatter is not intended nor appropriate for any form of crisis help. 
+- 🤖 [Android Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) - Android Lollipop (5) and greater.
+- 🍎 [iOS App Store](https://itunes.com/apps/exponent) - iOS 11 and greater.
 
-#### Is MomsOverMatter free? 
+## File Structure
 
-Yes – MomsOverMatter is a completely free service with no hidden fees or charges. 
+```
+.
+    ├── assets                 # Static assets like images and fonts.
+    ├── config                 # JS representation of fonts, images, themes, and more
+        └── Themes.js          # Example file for your app's themes
+    ├── screens                # React Native code for the screens you built.
+    │   └── MyFirstScreen.js   # Example file for the screen named "My First Screen"
+    ├── components.js          # All your custom components
+    ├── .gitignore             # List of files to ignore when comitting with Git
+    ├── App.js                 # Entry point for your app
+    ├── app.json               # Configuration file for your app, used by Expo
+    ├── AppNavigator.js        # Code for your app's navigators
+    ├── package.json           # The metadata for your project, including dependencies
+    └── README.md              # This file!
+```
 
-#### Is MomsOverMatter anonymous and confidential?
+## Publishing your app to the App Store
 
-Yes – MomsOverMatter is completely anonymous (all demographic questions are optional) and your answers to survey questions are kept confidential and secure. Please see our Privacy Policy for more information. 
+Expo has really great documentation for how to get started. [Click here](https://docs.expo.io/distribution/building-standalone-apps/) to learn more.
 
-#### Does MomsOverMatter protect my privacy? 
+## Troubleshooting
 
-lleTTonna understands the importance of keeping your information secure. Please see our Privacy Policy for more information. 
+Any errors that may occur in the process of developing or testing your app will show up as a "Redbox" error on the testing device. A red box will be show on the device with the error message and stack trace for the error. The Expo documentation has [more information about Redbox errors](https://docs.expo.io/get-started/errors/#redbox-errors-and-stack-traces).
 
-How can I participate in research involving MomsOverMatter? 
+Compilation errors or errors occurring when the expo process tries to execute
+commands will also show up in the browser. If you cannot fix these errors, you
+should refer to Expo's documentation on [debugging
+Javascript](https://docs.expo.io/workflow/debugging/).
 
-At this point in time we have no undergoing research projects – please stay tuned for more information regarding the start of clinical trials involving MomsOverMatter.
+## FAQ
 
-### For Researchers and Organizations
+- _How can I add my code to GitHub?_
 
-#### How can I undertake research involving MomsOverMatter? 
+  Pushing your code to GitHub is easy! Follow the information
+  [guide](https://help.github.com/en/github/getting-started-with-github/create-a-repo)
+  to create your repository and commit your project code.
 
-Please email info@llettonna.com for research inquiries. 
+- _How do I build a binary for the App and Play store?_
 
-</details>
+  Expo published an [excellent
+  guide](https://docs.expo.io/versions/latest/distribution/app-stores/) for
+  deploying to the Apple iTunes Store and the Google Play Store. Moreover, for
+  users with an iOS Enterprise certifcate, [Expo has information about using
+  the certificate to build your apps](https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#if-you-choose-to-build-for-ios).
+
+- _What/where is the license for this code?_
+
+  There's no license by default, but if you create a GitHub repository for your
+  project code, for example, [adding a license is
+  easy](https://help.github.com/en/github/building-a-strong-community/adding-a-license-to-a-repository).
+
+- _Can I run Expo web with this?_
+
+  Of course! See [this](https://docs.expo.io/versions/v37.0.0/bare/using-web/#__next) guide by Expo for running your React Native app in
+  a web browser.
+
+- _What libraries does this code depend on?_
+
+  You can see the full list in your projects `package.json` file (under the
+  `dependencies` section), but a few of our dependencies are `react-navigation`,
+  `react-native-screens`, and `expo-av`.
